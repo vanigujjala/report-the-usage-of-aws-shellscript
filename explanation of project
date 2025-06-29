@@ -1,0 +1,5 @@
+1.first we need to create ec2 instance and through public ip to connect ubuntu
+inthat we install aws cli then connect access id and password 
+then create one file awsconfigure-resource.sh --->vim awsconfigure-resource.sh
+inthat file we prove all the information next execute that file 
+we see the result 

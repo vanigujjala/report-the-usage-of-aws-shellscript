@@ -1,0 +1,50 @@
++ echo 'print s3 bucket'
+print s3 bucket
++ aws s3 ls
++ echo 'print ec2 instance'
+print ec2 instance
++ aws ec2 describe-instances
+{
+    "Reservations": [
+        {
+            "ReservationId": "r-0308a87a8ad32812b",
+            "OwnerId": "329599621716",
+            "Groups": [],
+            "Instances": [
+                {
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2025-06-29T11:12:00+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-012d5dfeb9a590320"
+                            }
+                        }
+                    ],
+                    "ClientToken": "0da4cb2c-a7c4-4e20-b0a2-bbf44a003652",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-174-129-110-225.compute-1.amazonaws.com",
+                                "PublicIp": "174.129.110.225"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2025-06-29T11:11:59+00:00",
+                                "AttachmentId": "eni-attach-06c92c1fbb6a12183",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+:
+More--+ echo 'print lambda'
++ aws lambda list-functions
++ echo 'print iam'
++ aws Iam list-users
+
+-->currently in my aws there is no iam ,lambda functions so not showing 
